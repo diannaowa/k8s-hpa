@@ -26,12 +26,13 @@ custom-metrics:
 
 .PHONY: hpa
 hpa:
-	@echo Deploy demo deployment & demo hpa
+	@echo Deploy demo deployment and demo hpa
 	kubectl apply -f ./podinfo/podinfo-dep.yaml
 	kubectl apply -f ./podinfo/podinfo-hpa.yaml
 
 .PHONY: custom-hpa
 custom-hpa:
-	@echo Deploy demo deployment & custom hpa
+	@echo Deploy demo deployment and custom hpa
 	kubectl apply -f ./podinfo/podinfo-dep.yaml
 	kubectl apply -f ./podinfo/podinfo-hpa-custom.yaml
+
